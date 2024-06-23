@@ -12,7 +12,7 @@ function flipCard(){
         const letter1 =
         flippedCards[0].querySelector('.backSide').textContent;
         const letter2 =
-        flippedCards[1].querySelector('.backSide').textContent;
+        flippedCards[1].querySelector('.backSide').textContent;git
 
         if(letter1 === letter2){
             flippedCards.forEach((card) => {
