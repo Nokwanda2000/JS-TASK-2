@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind game</title>
+<style>
+.game-board{
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+     padding: 20px;
+     box-shadow: 0 0 10px  rgba(red, green, blue, alpha);
+
+}
+.card{
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold ;
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+
+}
+.backSide{
+    background-color: rgb(26, 179, 206);
+    color: blueviolet;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.frontSide{
+    background-color: blue;
+    color: red;
+
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.flipped{
+    transform: rotateY(180deg);
+}
+.matched{
+    background-color: yellowgreen;
+    color: yellowgreen;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+ .matched .frontSide {
+    background-color: rgb(50, 187, 205);
+    color:yellowgreen
+}
+
+.matched .backSide{
+    background-color: rgb(205, 50, 166);
+    color: yellowgreen;
+} 
+
+</style>
+</head>
+
+<body>
+
+    <div class="game-board" >
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">A</div>
+         
+        
+        </div>
+    <div class="card ">
+        <div class="frontSide">?</div>
+        <div class=" backSide">B </div>
+    
+   </div>
+
+        <div class="card ">
+        <div class="frontSide">?</div>
+        <div class="backSide">C</div>
+        </div>
+
+       
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">D</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">E</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">F</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">G</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">H</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">A</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">B</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">C</div>
+        </div>
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">D</div>
+        </div>
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">E</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">F</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">G</div>
+        </div>
+
+        <div class="card">
+            <div class="frontSide">?</div>
+            <div class="backSide">H</div>
+        </div>
+
+ </div>
+<script src="./index.js"></script>
+    
+</body>
+</html>
